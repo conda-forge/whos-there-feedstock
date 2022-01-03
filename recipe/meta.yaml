@@ -1,5 +1,5 @@
 {% set name = "whos-there" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/whos-there-{{ version }}.tar.gz
-  sha256: a6378144b566b9bef4008b3a06e4720966514012577d6c97ad8cf38217763bdf
+  sha256: 23674ab13af376c5cf77600e05f5dae7c5b17bb13df47c543d5d73c06ccf41db
 
 build:
   number: 0
