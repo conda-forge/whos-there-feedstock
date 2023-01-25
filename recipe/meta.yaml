@@ -1,5 +1,5 @@
 {% set name = "whos-there" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/whos-there-{{ version }}.tar.gz
-  sha256: 23674ab13af376c5cf77600e05f5dae7c5b17bb13df47c543d5d73c06ccf41db
+  sha256: 07bfb7a57d1f94895662a2d2421caaa3e8ed1995fc4d11ab5005f2160d924b2a
 
 build:
   number: 0
@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8.1
     - poetry
   run:
-    - python >=3.6
-    - python-telegram-bot >=13.7,<14.0
-    - pytorch-lightning >=1.5.0,<2.0.0
-    - requests >=2.26.0,<3.0.0
+    - python >=3.8.1
+    - python-telegram-bot >=20.0,
+    - pytorch-lightning >=1.8.0
+    - requests >=2.28.2
 
 test:
   imports:
@@ -56,3 +56,4 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    - twsl
