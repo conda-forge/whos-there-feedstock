@@ -20,7 +20,7 @@ requirements:
     - pip
     - python >=3.8
     - poetry
-    - poetry_dynamic_versioning
+    - poetry-dynamic-versioning
   run:
     - python >=3.8
     - python-telegram-bot >=20.0
