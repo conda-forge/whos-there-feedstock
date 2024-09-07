@@ -19,6 +19,7 @@ to get a notification when your training is complete or when it crashes during t
 process with a single callback.
 
 
+
 - Supports E-Mail, Discord, Slack, Teams, Telegram
 
 
