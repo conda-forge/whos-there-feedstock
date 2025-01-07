@@ -11,18 +11,18 @@ source:
   sha256: cd3d4a84317e410053b94ec650faad9d42f1adc8884c5d017cf140bb51369e5f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - poetry
     - poetry-dynamic-versioning
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - python-telegram-bot >=20.0
     - lightning >=2.2.0
     - requests >=2.26.0,<3.0.0
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/twsl/whos-there
