@@ -19,12 +19,11 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - poetry
-    - poetry-dynamic-versioning
+    - uv
   run:
     - python >={{ python_min }}
     - python-telegram-bot >=20.0
-    - lightning >=2.2.0
+    - lightning >=2.6.0
     - requests >=2.26.0,<3.0.0
 
 test:
