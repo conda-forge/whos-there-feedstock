@@ -20,6 +20,8 @@ requirements:
     - pip
     - python {{ python_min }}
     - uv
+    - hatchling
+    - uv-dynamic-versioning
   run:
     - python >={{ python_min }}
     - python-telegram-bot >=20.0
